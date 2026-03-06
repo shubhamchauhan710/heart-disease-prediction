@@ -11,7 +11,7 @@ def load_css(file_path):
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
 # loading the saved model
-loaded_model = pickle.load(open(r"C:\Users\subha\OneDrive\Desktop\ML project\trained_model.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", "rb"))
 
 def heart_disease_prediction(input_data):
     #creating numpy array
